@@ -67,7 +67,7 @@ Clone the following repositories into the `ArchiLab` folder:
 - [prox-api-gateway](https://github.com/Archi-Lab/prox-api-gateway)
 
 
-Copy&Paste ready (for PowerShell)
+Copy&Paste ready for the `master` branch (PowerShell)
 ``` posh
 > git clone https://github.com/Archi-Lab/prox-project-service.git; `
 git clone https://github.com/Archi-Lab/prox-module-service.git; `
@@ -76,7 +76,16 @@ git clone https://github.com/Archi-Lab/prox-service-discovery.git; `
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
 
-Copy&Past ready (for bash)
+Copy&Paste ready for the `gp-ss2019` branch (Powershell)
+``` posh
+> git clone https://github.com/Archi-Lab/prox-project-service.git; cd prox-project-service/; git checkout gp-ss2019; cd ..; `
+git clone https://github.com/Archi-Lab/prox-module-service.git; cd prox-module-service/; git checkout gp-ss2019; cd ..; `
+git clone https://github.com/Archi-Lab/prox-web-client.git; cd prox-web-client/; git checkout gp-ss2019; cd..; `
+git clone https://github.com/Archi-Lab/prox-service-discovery.git; cd prox-service-discovery/; git checkout gp-ss2019; cd ..; `
+git clone https://github.com/Archi-Lab/prox-api-gateway.git; cd prox-api-gateway/; git checkout gp-ss2019; cd ..
+```
+
+Copy&Paste ready for the `master` branch (for bash)
 ``` posh
 > git clone https://github.com/Archi-Lab/prox-project-service.git &&
 git clone https://github.com/Archi-Lab/prox-module-service.git &&
@@ -84,6 +93,15 @@ git clone https://github.com/Archi-Lab/prox-web-client.git &&
 git clone https://github.com/Archi-Lab/prox-service-discovery.git &&
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
+Copy&Paste ready for the `gp-ss2019` branch (for bash)
+``` posh
+> git clone https://github.com/Archi-Lab/prox-project-service.git && cd prox-project-service/ && git checkout gp-ss2019 && cd .. &&
+git clone https://github.com/Archi-Lab/prox-module-service.git && cd prox-module-service/ && git checkout gp-ss2019 && cd .. &&
+git clone https://github.com/Archi-Lab/prox-web-client.git && cd prox-web-client/ && git checkout gp-ss2019 && cd .. && 
+git clone https://github.com/Archi-Lab/prox-service-discovery.git && cd prox-service-discovery/ && git checkout gp-ss2019 && cd .. &&
+git clone https://github.com/Archi-Lab/prox-api-gateway.git && cd prox-api-gateway/ && git checkout gp-ss2019 && cd ..
+```
+
 
 ## Run (local)
 This chapter describe how to run locally a copy of the prox environment. In this step we use the last version of the images.
