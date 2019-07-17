@@ -76,13 +76,13 @@ git clone https://github.com/Archi-Lab/prox-service-discovery.git; `
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
 
-Copy&Paste ready for the `gp-ss2019` branch (Powershell)
+Copy&Paste ready for the `dev` branch (Powershell)
 ``` posh
-> git clone https://github.com/Archi-Lab/prox-project-service.git; cd prox-project-service/; git checkout gp-ss2019; cd ..; `
-git clone https://github.com/Archi-Lab/prox-module-service.git; cd prox-module-service/; git checkout gp-ss2019; cd ..; `
-git clone https://github.com/Archi-Lab/prox-web-client.git; cd prox-web-client/; git checkout gp-ss2019; cd..; `
-git clone https://github.com/Archi-Lab/prox-service-discovery.git; cd prox-service-discovery/; git checkout gp-ss2019; cd ..; `
-git clone https://github.com/Archi-Lab/prox-api-gateway.git; cd prox-api-gateway/; git checkout gp-ss2019; cd ..
+> git clone https://github.com/Archi-Lab/prox-project-service.git; cd prox-project-service/; git checkout dev; cd ..; `
+git clone https://github.com/Archi-Lab/prox-module-service.git; cd prox-module-service/; git checkout dev; cd ..; `
+git clone https://github.com/Archi-Lab/prox-web-client.git; cd prox-web-client/; git checkout dev; cd..; `
+git clone https://github.com/Archi-Lab/prox-service-discovery.git; cd prox-service-discovery/; git checkout dev; cd ..; `
+git clone https://github.com/Archi-Lab/prox-api-gateway.git; cd prox-api-gateway/; git checkout dev; cd ..
 ```
 
 Copy&Paste ready for the `master` branch (for bash)
@@ -93,13 +93,13 @@ git clone https://github.com/Archi-Lab/prox-web-client.git &&
 git clone https://github.com/Archi-Lab/prox-service-discovery.git &&
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
-Copy&Paste ready for the `gp-ss2019` branch (for bash)
+Copy&Paste ready for the `dev` branch (for bash)
 ``` posh
-> git clone https://github.com/Archi-Lab/prox-project-service.git && cd prox-project-service/ && git checkout gp-ss2019 && cd .. &&
-git clone https://github.com/Archi-Lab/prox-module-service.git && cd prox-module-service/ && git checkout gp-ss2019 && cd .. &&
-git clone https://github.com/Archi-Lab/prox-web-client.git && cd prox-web-client/ && git checkout gp-ss2019 && cd .. && 
-git clone https://github.com/Archi-Lab/prox-service-discovery.git && cd prox-service-discovery/ && git checkout gp-ss2019 && cd .. &&
-git clone https://github.com/Archi-Lab/prox-api-gateway.git && cd prox-api-gateway/ && git checkout gp-ss2019 && cd ..
+> git clone https://github.com/Archi-Lab/prox-project-service.git && cd prox-project-service/ && git checkout dev && cd .. &&
+git clone https://github.com/Archi-Lab/prox-module-service.git && cd prox-module-service/ && git checkout dev && cd .. &&
+git clone https://github.com/Archi-Lab/prox-web-client.git && cd prox-web-client/ && git checkout dev && cd .. && 
+git clone https://github.com/Archi-Lab/prox-service-discovery.git && cd prox-service-discovery/ && git checkout dev && cd .. &&
+git clone https://github.com/Archi-Lab/prox-api-gateway.git && cd prox-api-gateway/ && git checkout dev && cd ..
 ```
 
 
@@ -124,7 +124,7 @@ Then continue with these instructions.
 
 Create a new docker network for ptb
 ``` posh
-> docker network create ptb
+> docker network create prox
 ```
 
 Start the service discovery
