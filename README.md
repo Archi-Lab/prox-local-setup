@@ -139,16 +139,21 @@ Start the API-Gateway
 > docker-compose -f docker-compose-api-gateway.yml up
 ```
 
-Start the project service
-``` posh
-> cd prox-project-service/
-> docker-compose -f docker-compose-project-service.yml up
-```
-
 Start the module service
 ``` posh
 > cd prox-module-service/
 > docker-compose -f docker-compose-module-service.yml up
+```
+
+**Hint:** If you start the module service for the first time, you have to wait for the following output in the log before you start the project service (It can take up to 10 min.):
+```
+2019-07-17 11:49:54.968  INFO 1 --- [nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 135 ms
+```
+
+Start the project service
+``` posh
+> cd prox-project-service/
+> docker-compose -f docker-compose-project-service.yml up
 ```
 
 Start the web-client
