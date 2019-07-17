@@ -122,7 +122,7 @@ Then continue with these instructions.
 
 ### Start locally 
 
-Create a new docker network for ptb
+Create a new docker network for prox
 ``` posh
 > docker network create prox
 ```
