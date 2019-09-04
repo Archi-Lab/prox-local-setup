@@ -103,7 +103,7 @@ git clone https://github.com/Archi-Lab/prox-api-gateway.git && cd prox-api-gatew
 ```
 
 
-## Run (local)
+## Run (local) in Docker
 This chapter describe how to run locally a copy of the prox environment. In this step we use the last version of the images.
 
 ### You have an account on https://nexus.archi-lab.io/
@@ -177,7 +177,7 @@ i ｢wdm｣: Compiled successfully.
 
 Finally open your browser on http://localhost:4200
 
-## Debug (local)
+## Run/Debug (local) in IntelliJ IDEA
 This chapter describe how to debug/run locally in IntelliJ IDEA a copy of the prox environment.
 
 First you have to set `local` as active profile in IntelliJ IDEA for the following projects:
