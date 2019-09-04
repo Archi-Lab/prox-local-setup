@@ -1,6 +1,12 @@
 # PTB Local setup
 This repository contains the instruction how to start the prox (Project Exchange TH Köln) on your local machine.
 
+### Table of contents
+* [System requirements](#system-requirements)
+* [Get the sources](#get-the-sources)
+* [Run (local) in Docker](#run-local-in-docker)
+* [Run/Debug (local) in IntelliJ IDEA](#rundebug-local-in-intellij-idea)
+
 ## System requirements
 This section describe the system requirements for the prox-* projects.
 
