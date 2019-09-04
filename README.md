@@ -176,3 +176,27 @@ i ｢wdm｣: Compiled successfully.
 ```
 
 Finally open your browser on http://localhost:4200
+
+## Debug (local)
+This chapter describe how to debug/run locally in IntelliJ IDEA a copy of the prox environment.
+
+First you have to set `local` as active profile in IntelliJ IDEA for the following projects:
+- prox-project-service
+- prox-api-gateway
+- prox-module-service
+
+For the other projects, nothing needs to be adjusted.
+
+### Configure active profile in IntelliJ IDEA
+- Open the projects mentioned above in IntelliJ IDEA and wait a moment until IntelliJ loaded the project. After that click on the arrow in the configuration combobox and than on **Edit Configurations...**
+![Arrow](assets/images/ConfigurationArrow.png)
+![Edit Configurations...](assets/images/EditConfiguration.png)
+- Go to the **Spring Boot > <Projectname>**-Tab and add `local` to the ***Active profiles*** field.
+![Active profiles](assets/images/ActiveProfiles.png)
+
+Repeat these steps for each of the above projects.
+
+### Running/Debugging in IntelliJ
+After that you can run oder debug the all the services with the Run or Debug-Button.
+
+![Run or Debug](assets/images/RunOrDebug.png)
