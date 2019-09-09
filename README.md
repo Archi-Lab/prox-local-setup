@@ -65,6 +65,7 @@ Clone the following repositories into the `ArchiLab` folder:
 - [prox-web-client](https://github.com/Archi-Lab/prox-web-client)
 - [prox-service-discovery](https://github.com/Archi-Lab/prox-service-discovery)
 - [prox-api-gateway](https://github.com/Archi-Lab/prox-api-gateway)
+- [prox-proposal-service](https://github.com/Archi-Lab/prox-proposal-service)
 
 
 Copy&Paste ready for the `master` branch (PowerShell)
@@ -73,6 +74,7 @@ Copy&Paste ready for the `master` branch (PowerShell)
 git clone https://github.com/Archi-Lab/prox-module-service.git; `
 git clone https://github.com/Archi-Lab/prox-web-client.git; `
 git clone https://github.com/Archi-Lab/prox-service-discovery.git; `
+git clone https://github.com/Archi-Lab/prox-proposal-service.git; `
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
 
@@ -82,6 +84,7 @@ Copy&Paste ready for the `dev` branch (Powershell)
 git clone https://github.com/Archi-Lab/prox-module-service.git; cd prox-module-service/; git checkout dev; cd ..; `
 git clone https://github.com/Archi-Lab/prox-web-client.git; cd prox-web-client/; git checkout dev; cd..; `
 git clone https://github.com/Archi-Lab/prox-service-discovery.git; cd prox-service-discovery/; git checkout dev; cd ..; `
+git clone https://github.com/Archi-Lab/prox-proposal-service.git; cd prox-proposal-service/; git checkout dev; cd ..; `
 git clone https://github.com/Archi-Lab/prox-api-gateway.git; cd prox-api-gateway/; git checkout dev; cd ..
 ```
 
@@ -91,6 +94,7 @@ Copy&Paste ready for the `master` branch (for bash)
 git clone https://github.com/Archi-Lab/prox-module-service.git &&
 git clone https://github.com/Archi-Lab/prox-web-client.git &&
 git clone https://github.com/Archi-Lab/prox-service-discovery.git &&
+git clone https://github.com/Archi-Lab/prox-proposal-service.git &&
 git clone https://github.com/Archi-Lab/prox-api-gateway.git
 ```
 Copy&Paste ready for the `dev` branch (for bash)
@@ -99,6 +103,7 @@ Copy&Paste ready for the `dev` branch (for bash)
 git clone https://github.com/Archi-Lab/prox-module-service.git && cd prox-module-service/ && git checkout dev && cd .. &&
 git clone https://github.com/Archi-Lab/prox-web-client.git && cd prox-web-client/ && git checkout dev && cd .. && 
 git clone https://github.com/Archi-Lab/prox-service-discovery.git && cd prox-service-discovery/ && git checkout dev && cd .. &&
+git clone https://github.com/Archi-Lab/prox-proposal-service.git && cd prox-proposal-service/ && git checkout dev && cd .. &&
 git clone https://github.com/Archi-Lab/prox-api-gateway.git && cd prox-api-gateway/ && git checkout dev && cd ..
 ```
 
@@ -130,19 +135,19 @@ Create a new docker network for prox
 Start the service discovery
 ``` posh
 > cd prox-service-discovery/
-> docker-compose -f docker-compose-service-discovery.yml up
+> docker-compose -f ./src/main/docker/docker-compose.yml up
 ```
 
 Start the API-Gateway
 ``` posh
 > cd prox-api-gateway/
-> docker-compose -f docker-compose-api-gateway.yml up
+> docker-compose -f ./src/main/docker/docker-compose.yml up
 ```
 
 Start the module service
 ``` posh
 > cd prox-module-service/
-> docker-compose -f docker-compose-module-service.yml up
+> docker-compose -f ./src/main/docker/docker-compose.yml up
 ```
 
 **Hint:** If you start the module service for the first time, you have to wait for the following output in the log before you start the project service (It can take up to 10 min.):
@@ -153,7 +158,13 @@ Start the module service
 Start the project service
 ``` posh
 > cd prox-project-service/
-> docker-compose -f docker-compose-project-service.yml up
+> docker-compose -f ./src/main/docker/docker-compose.yml up
+```
+
+Start the proposal service
+``` posh
+> cd prox-proposal-service/
+> docker-compose -f ./src/main/docker/docker-compose.yml up
 ```
 
 Start the web-client
@@ -184,6 +195,7 @@ First you have to set `local` as active profile in IntelliJ IDEA for the followi
 - prox-project-service
 - prox-api-gateway
 - prox-module-service
+- prox-proposal-service
 
 For the other projects, nothing needs to be adjusted.
 
