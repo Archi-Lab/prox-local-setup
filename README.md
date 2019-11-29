@@ -10,26 +10,14 @@ This repository contains the instruction how to start the prox (Project Exchange
 ## System requirements
 This section describe the system requirements for the prox-* projects.
 
-- [Maven](https://maven.apache.org/)
 - [NodeJs](https://nodejs.org/en/)
 - [Docker](https://docs.docker.com/)
-- [Java 8 JDK (Java SE Development Kit 8uXXX reicht!)](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Java 11 JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 - [Git](https://git-scm.com/download)
 - IntelliJ/Eclipse (Optional)
 
 ### Verify
 To verify that the programs correctly installed and configured, execute the following commands on your command line/bash and verify that you get outputs as like as the following (versions can be different!).
-
-Maven
-``` posh
-> mvn --version
-Apache Maven 3.5.0 (ff8f5e7444045639af65f6095c62210b5713f426; 2017-04-03T21:39:06+02:00)
-Maven home: E:\maven\bin\..
-Java version: 1.8.0_144, vendor: Oracle Corporation
-Java home: C:\Program Files\Java\jdk1.8.0_144\jre
-Default locale: de_DE, platform encoding: Cp1252
-OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
-```
 
 NodeJs
 ``` posh
@@ -46,9 +34,9 @@ Docker version 18.09.2, build 6247962
 Java
 ``` posh
 > java -version
-java version "1.8.0_144"
-Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
-Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+java 11.0.4 2019-07-16 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.4+10-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.4+10-LTS, mixed mode)
 ```
 
 Git
